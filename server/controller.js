@@ -13,10 +13,6 @@ let movieList= [
     return this
   }
 
-// axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${key}&language=en-US&query=${user_input}&page=1&include_adult=false`).then( response => console.log(response.data.results[0]) )
-
-// axios.get("https://api.themoviedb.org/3/movie/327?api_key=d194aa456eb6c0b417f1a517afb41f31").then( response => console.log(response.data) )
-
  module.exports = {
      read: ( req, res ) => {
          res.status(200).send(movieList)
